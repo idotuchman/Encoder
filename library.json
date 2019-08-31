@@ -1,0 +1,13 @@
+{
+  "name": "Encoder",
+  "keywords": "Motor, Rotary, Optical, Encoder",
+  "description": "An Arduino to read simple, non-quadrature encoder values.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/idotuchman/Encoder"
+  },
+  "version": "0.0.1",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
