@@ -1,4 +1,4 @@
-#include "encoder.h"
+#include "Encoder.h"
 
 const int MIN_RPM_SAMPLE_TIME = 250;  // in msec
 
@@ -11,9 +11,9 @@ Encoder::Encoder(int encoderPin, int resolution) {
   pinMode(_encoderPin, INPUT_PULLUP);
 }
 
-void Encoder:reset() {
+void Encoder::reset() {
   _encoderCount = 0;
-  _lastCountTime = timeNow;
+  _lastCountTime = millis();
 }
 
 void Encoder::isr() {   // TODO add debounce delay
